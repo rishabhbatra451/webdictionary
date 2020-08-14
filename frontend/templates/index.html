@@ -1,0 +1,29 @@
+{% extends "header.html" %}
+
+
+    {% block content %}
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
+
+
+<div class="wrapper">
+    <form action="/result" method="post">
+        <div class="row">
+            <div class="col-sm-10">
+                <input type="text" class="input" name="query" id="query"
+        placeholder="SEARCH YOUR WORD HERE?">
+            </div>
+            <div class="col-sm-2">
+                <button type="submit" class="btnSearch btn btn-warning searchbtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+
+
+
+    </form>
+
+
+
+    {% endblock %}

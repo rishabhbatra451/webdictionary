@@ -1,0 +1,65 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+<style>
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.logo{
+    float: right;}
+ .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav{
+ background-color: #333;
+    overflow: hidden;
+}
+</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutstyle.css') }}" >
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+
+        <div class="pic"></div>
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+        <a href="https://www.facebook.com/rishabh.batra.182/"><div class="social1">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+        </div></a>
+        <a href="https://twitter.com/Rishabh53041929/"><div class="social2">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+        </div></a>
+         <a href="https://www.instagram.com/rishabhh.01/"><div class="social3">
+         <i class="fab fa-instagram" aria-hidden="true"></i>
+        </div></a>
+      </div>
+
+      <div class="content col-md-6 col-lg-6">
+      <center><h1 class="contentHead">ABOUT ME</h1></center>
+
+      <h2>Hi Friends, <br/><br/>
+        This is Rishabh batra. I'm a Engineering student, its my first website <sup>o</sup> Hope YOU will Like It<sup>o</sup><br/><br/>
+        Can't belive that it worked.
+        <br/><br/>
+        Show your L<span>&hearts;</span>VE if you like my website
+        <br/><br/>
+        <p>(NOTICE: PLEASE GIVE YOUR FEEDBACK)</p>
+
+      </h2>
+    </div>
+
+    </div>
+  </div>
+
+
+{% endblock %}
